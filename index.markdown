@@ -23,9 +23,13 @@ title: AWS Compute Services
       <img src="{{ '/assets/img/logo/coreweave.png' | relative_url }}" 
            alt="CoreWeave" style="height:32px">
     </th>
+    <th>
+      <img src="{{ '/assets/img/logo/nebius.png' | relative_url }}" 
+           alt="Nebius" style="height:32px">
+    </th>
   </tr>
 
-  {% assign csp_list = "aws,coreweave" | split: "," %}
+  {% assign csp_list = "aws,coreweave,nebius" | split: "," %}
 
   {% for item in site.data.cloudservices.services %}
     <tr>
