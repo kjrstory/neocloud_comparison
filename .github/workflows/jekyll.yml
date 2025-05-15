@@ -1,0 +1,31 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  github-pages:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: _data/cloudservices.yml
+          config_file: .yamllint.yml
+      - name: Caching for Bundler
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Build and deploy
+        uses: helaili/jekyll-action@v2
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
