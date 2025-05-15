@@ -18,10 +18,6 @@ services:
     subcategory: NVIDIA Blackwell
     subcategoryurl:
     service:
-      - aws:
-          - name:
-            icon: 
-            ref:
       - coreweave:
           - name: NVIDIA HGX GB200 NVL72
             icon: coreweave-gpu-compute.svg
