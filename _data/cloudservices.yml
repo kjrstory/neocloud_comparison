@@ -2,20 +2,33 @@
 services:
   - category: GPU Compute
     categoryurl:
+    subcategory: NVIDIA Ampere
+    subcategoryurl:
+    service:
+      - aws:
+          - name: EC2 P4d
+            icon: Arch_Amazon-EC2_64.png
+            ref: https://aws.amazon.com/ec2/instance-types/p4/
+      - coreweave:
+          - name: A100
+            icon: coreweave-gpu-compute.svg
+            ref: https://docs.coreweave.com/docs/platform/instances#a100
+  - category: GPU Compute
+    categoryurl:
     subcategory: NVIDIA Hopper
     subcategoryurl:
     service:
       - aws:
-          - name: EC2 P5 Instance
+          - name: EC2 P5
             icon: Arch_Amazon-EC2_64.png
             ref: https://aws.amazon.com/ec2/instance-types/p5/
       - coreweave:
-          - name: NVIDIA HGX H100/H200
+          - name: HGX H100/H200
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/hgx-h100-h200
       - nebius:
-          - name: NVIDIA H100/H200 SXM
-            icon: compute.svg
+          - name: H100/H200 SXM
+            icon: Nebius_Compute.svg
             ref: https://nebius.com/services/compute
   - category: GPU Compute
     categoryurl:
@@ -23,7 +36,7 @@ services:
     subcategoryurl:
     service:
       - coreweave:
-          - name: NVIDIA GB200 NVL72
+          - name: GB200 NVL72
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/nvidia-blackwell
 
