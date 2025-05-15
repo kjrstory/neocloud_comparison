@@ -16,11 +16,11 @@ title: AWS Compute Services
     <th style="width:7%">Category</th>
     <th style="width:12%">Service Type</th>
     <th>
-      <img src="{{ '/assets/img/logo/aws.png' | relative_url }}"
+      <img src="{{ '/assets/img/logo/aws.svg' | relative_url }}"
            alt="AWS Logo" style="height:32px">
     </th>
     <th>
-      <img src="{{ '/assets/img/logo/coreweave.svg' | relative_url }}" 
+      <img src="{{ '/assets/img/logo/coreweave.png' | relative_url }}" 
            alt="CoreWeave" style="height:32px">
     </th>
   </tr>

@@ -1,26 +1,39 @@
-<a href="https://ilyas-it83.github.io/CloudComparer/">
-    <img src="https://github.com/ilyas-it83/CloudComparer/blob/master/img/Logo2.png" alt="Compare Cloud" title="Compare Cloud" align="right" height="180" />
-</a>
+# NeoCloud Comparison
 
-# Cloud Comparer
+This project provides an up-to-date, community-editable comparison of **GPU cloud offerings** from emerging and specialized cloud providers — often referred to as **Neo Cloud Providers** — such as CoreWeave, Lambda Labs, Together AI, and more.
 
-This is the second version of my Cloud Comparison slide deck which I prepared a year back (can be downloaded here: http://www.slideshare.net/ilyas_it83/microsoft-azure-vs-amazon-web-services-aws-services-feature-mapping). The version 1 recieved more than 22K views and 400+ download at the time of working on this project. This gave me the idea of creating a robust and dependable comparison/mapping between the various services offered by the major cloud providers in a lively and updatable format.
+While hyperscalers like AWS, Azure, and GCP dominate in general-purpose services, new players are offering **competitive and specialized GPU infrastructure** with better price-performance, flexibility, and availability. This project aims to compare such services **side-by-side with AWS** and other well-known providers from a compute and GPU availability perspective.
 
-The project is open sourced to let fellow Cloud Architects, IT Pros, Developers to feel free to edit and update the comparison upto date.
+> ✨ The goal is to make it easy for researchers, ML engineers, and cloud architects to understand how modern GPU infrastructure stacks up — across H100, L40S, A100, and even future B100/GB200 instances.
 
+## 🛠 Contributing
 
-## Contributing
+This repository is fully open source. You’re welcome to contribute GPU pricing data, region availability, or other features related to NeoCloud offerings.
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Feel free to:
+- Add new providers (e.g., Paperspace, Vultr, Scaleway)
+- Add new GPUs (e.g., L4, B100, RTX 6000 Ada)
+- Improve formatting, styling, or navigation
+- Submit PRs to improve data consistency
 
-## Authors
+Please follow standard pull request etiquette and use YAML linting before submitting.
 
-* **Ilyas_IT83** - *Initial work* - [CloudComparer](https://github.com/ilyas-it83/CloudComparer/)
+## 📄 Live Site
 
-See also the list of [contributors](https://github.com/ilyas-it83/CloudComparer/graphs/contributors) who participated in this project.
+> 🔗 [View the Live Site](https://kjrstory.github.io/neocloud_comparison/)
 
-## License
+## 👤 Author
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+**[@kjrstory](https://github.com/kjrstory)** — NeoCloud enthusiast and HPC architect
 
-## Acknowledgments
+See also the list of [contributors](https://github.com/kjrstory/neocloud_comparison/graphs/contributors) who helped build this project.
+
+## 📜 License
+
+This project is licensed under the MIT License – see the [LICENSE.md](LICENSE.md) file for details.
+
+## 🙏 Acknowledgments
+
+Inspired by the original [CloudComparer](https://github.com/ilyas-it83/CloudComparer) project by [@ilyas-it83](https://github.com/ilyas-it83), which compared AWS, Azure, and GCP services.
+
+---

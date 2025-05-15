@@ -2,7 +2,7 @@
 services:
   - category: GPU Compute
     categoryurl:
-    subcategory: NVIDIA Blackwell(H100/H200)
+    subcategory: NVIDIA Hopper
     subcategoryurl:
     service:
       - aws:
@@ -10,12 +10,12 @@ services:
             icon: Arch_Amazon-EC2_64.png
             ref: https://aws.amazon.com/ec2/instance-types/p5/
       - coreweave:
-          - name: HGX H100 Instance
+          - name: NVIDIA HGX H100 and HGX H200
             icon: h100.svg
             ref: https://www.coreweave.com/products/hgx-h100-h200
   - category: GPU Compute
     categoryurl:
-    subcategory: B100
+    subcategory: NVIDIA Blackwell
     subcategoryurl:
     service:
       - aws:
@@ -23,7 +23,7 @@ services:
             icon: none.png
             ref:
       - coreweave:
-          - name: NVIDIA Honneywell(GB200/B200)
+          - name: NVIDIA HGX GB200 NVL72
             icon: gb200.svg
             ref: https://www.coreweave.com/products/nvidia-blackwell
 
