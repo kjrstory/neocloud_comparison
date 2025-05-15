@@ -14,8 +14,8 @@ services:
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/hgx-h100-h200
       - nebius:
-          - name: NVIDIA H100/H200
-            icon: coreweave-gpu-compute.svg
+          - name: NVIDIA H100/H200 SXM
+            icon: compute.svg
             ref: https://nebius.com/services/compute
   - category: GPU Compute
     categoryurl:

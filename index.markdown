@@ -24,7 +24,7 @@ title: AWS Compute Services
            alt="CoreWeave" style="height:32px">
     </th>
     <th>
-      <img src="{{ '/assets/img/logo/nebius.png' | relative_url }}" 
+      <img src="{{ '/assets/img/logo/nebius.svg' | relative_url }}" 
            alt="Nebius" style="height:32px">
     </th>
   </tr>
