@@ -10,8 +10,8 @@ services:
             icon: Arch_Amazon-EC2_64.png
             ref: https://aws.amazon.com/ec2/instance-types/p5/
       - coreweave:
-          - name: NVIDIA HGX H100 and HGX H200
-            icon: h100.svg
+          - name: NVIDIA HGX H100/H200
+            icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/hgx-h100-h200
   - category: GPU Compute
     categoryurl:
@@ -20,11 +20,11 @@ services:
     service:
       - aws:
           - name:
-            icon: none.png
+            icon: 
             ref:
       - coreweave:
           - name: NVIDIA HGX GB200 NVL72
-            icon: gb200.svg
+            icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/nvidia-blackwell
 
 
