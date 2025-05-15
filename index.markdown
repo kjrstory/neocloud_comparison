@@ -25,40 +25,31 @@ title: AWS Compute Services
     </th>
   </tr>
 
+  {% assign csp_list = "aws,coreweave" | split: "," %}
+
   {% for item in site.data.cloudservices.services %}
-  <tr>
-    <td>{{ item.category }}</td>
-    <td>{{ item.subcategory }}</td>
-    <td>
-      <ul>
-      {% for entry in item.service %}
-        {% if entry.aws %}
-          {% for record in entry.aws %}
-            <li>
-              <img src="{{ '/assets/img/cloudproviders/aws/' | append: record.icon | relative_url }}"
-                  alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
-              <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
-            </li>
+    <tr>
+      <td>{{ item.category }}</td>
+      <td>{{ item.subcategory }}</td>
+
+      {% for csp in csp_list %}
+        <td>
+          <ul>
+          {% for entry in item.service %}
+            {% if entry[csp] %}
+              {% for record in entry[csp] %}
+                <li>
+                  <img src="{{ '/assets/img/cloudproviders/' | append: csp | append: '/' | append: record.icon | relative_url }}"
+                      alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
+                  <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
+                </li>
+              {% endfor %}
+            {% endif %}
           {% endfor %}
-        {% endif %}
+          </ul>
+        </td>
       {% endfor %}
-      </ul>
-    </td>
-    <td>
-      <ul>
-      {% for entry in item.service %}
-        {% if entry.coreweave %}
-          {% for record in entry.coreweave %}
-            <li>
-              <img src="{{ '/assets/img/cloudproviders/coreweave/' | append: record.icon | relative_url }}"
-                  alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
-              <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
-            </li>
-          {% endfor %}
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </td>
-  </tr>
+    </tr>
   {% endfor %}
+
 </table>
