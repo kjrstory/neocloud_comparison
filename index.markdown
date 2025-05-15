@@ -54,7 +54,8 @@ layout: home
 			<ul>
 			    {% for entry in item.service %} 
 					{% for record in entry.aws %}
-						<li ><img src="/assets/img/cloudproviders/aws/{{record.icon}}" alt="{{record.name}}" > <a href="{{record.ref}}" target="_blank" alt="{{record.name}}">{{record.name}}</a></li>
+						<li ><img src="{{ "/assets/img/cloudproviders/aws/{{record.icon}}" | append: record.icon | relative_url }}"  alt="{{record.name}}" >
+                        <a href="{{record.ref}}" target="_blank" alt="{{record.name}}">{{record.name}}</a></li>
 					{% endfor %}	
 				{% endfor %}	
 			</ul>
