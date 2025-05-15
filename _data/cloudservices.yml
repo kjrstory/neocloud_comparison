@@ -6,7 +6,7 @@ services:
     subcategoryurl:
     service:
       - aws:
-          - name: EC2 P4d
+          - name: EC2 P4d(A100)
             icon: Arch_Amazon-EC2_64.png
             ref: https://aws.amazon.com/ec2/instance-types/p4/
       - coreweave:
@@ -15,11 +15,28 @@ services:
             ref: https://docs.coreweave.com/docs/platform/instances#a100
   - category: GPU Compute
     categoryurl:
+    subcategory: NVIDIA Ada Lovelace
+    subcategoryurl:
+    service:
+      - aws:
+          - name: EC2 G6e(L40S)
+            icon: Arch_Amazon-EC2_64.png
+            ref: https://aws.amazon.com/ec2/instance-types/g6e/
+      - coreweave:
+          - name: L40S/L40
+            icon: coreweave-gpu-compute.svg
+            ref: https://www.coreweave.com/products/gpu-compute
+      - nebius:
+          - name: L40S/L40
+            icon: Nebius_Compute.svg
+            ref: https://nebius.com/services/compute            
+  - category: GPU Compute
+    categoryurl:
     subcategory: NVIDIA Hopper
     subcategoryurl:
     service:
       - aws:
-          - name: EC2 P5
+          - name: EC2 P5(H100/H200)
             icon: Arch_Amazon-EC2_64.png
             ref: https://aws.amazon.com/ec2/instance-types/p5/
       - coreweave:
