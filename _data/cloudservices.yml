@@ -1,26 +1,30 @@
-- category: GPU Compute
-  categoryurl:
-  subcategory: NVIDIA Blackwell(H100/H200)
-  subcategoryurl:
-  services:
-    - aws:
-        - name: EC2 P5 Instance
-          icon: Arch_Amazon-EC2_64.png
-          ref: https://aws.amazon.com/ec2/instance-types/p5/
-    - coreweave:
-        - name: HGX H100 Instance
-          icon: h100.svg
-          ref: https://www.coreweave.com/products/hgx-h100-h200
-- category: GPU Compute
-  categoryurl:
-  subcategory: B100
-  subcategoryurl:
-  services:
-    - aws:
-        - name:
-          icon: none.png
-          ref:
-    - coreweave:
-        - name: NVIDIA Honneywell(GB200/B200)
-          icon: gb200.svg
-          ref: https://www.coreweave.com/products/nvidia-blackwell
+---
+services:
+  - category: GPU Compute
+    categoryurl:
+    subcategory: NVIDIA Blackwell(H100/H200)
+    subcategoryurl:
+    service:
+      - aws:
+          - name: EC2 P5 Instance
+            icon: Arch_Amazon-EC2_64.png
+            ref: https://aws.amazon.com/ec2/instance-types/p5/
+      - coreweave:
+          - name: HGX H100 Instance
+            icon: h100.svg
+            ref: https://www.coreweave.com/products/hgx-h100-h200
+  - category: GPU Compute
+    categoryurl:
+    subcategory: B100
+    subcategoryurl:
+    service:
+      - aws:
+          - name:
+            icon: none.png
+            ref:
+      - coreweave:
+          - name: NVIDIA Honneywell(GB200/B200)
+            icon: gb200.svg
+            ref: https://www.coreweave.com/products/nvidia-blackwell
+
+
