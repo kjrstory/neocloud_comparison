@@ -1,11 +1,19 @@
----
-services:
-  - category: Compute
-    categoryurl:
-    subcategory: Virtual Server
-    subcategoryurl:
-    service:
-      - aws:
-          - name: Amazon EC2
-            ref: https://aws.amazon.com/ec2/
-            icon: Arch_Amazon-EC2_64.png
+- category: GPU Compute
+  subcategory: NVIDIA Blackwell(H100/H200)
+  service:
+    - aws:
+        - name: EC2 P5 Instance
+          icon: p5.svg
+          ref: https://aws.amazon.com/ec2/instance-types/p5/
+      coreweave:
+        - name: HGX H100 Instance
+          icon: h100.svg
+          ref: https://www.coreweave.com/products/hgx-h100-h200
+
+- category: GPU Compute
+  subcategory: B100
+  service:
+      coreweave:
+        - name: NVIDIA Honneywell(GB200/B200)
+          icon: gb200.svg
+          ref: https://www.coreweave.com/products/nvidia-blackwell
