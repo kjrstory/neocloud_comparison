@@ -23,8 +23,6 @@ title: AWS Compute Services
       <img src="{{ '/assets/img/logo/coreweave.svg' | relative_url }}" 
            alt="CoreWeave" style="height:32px">
     </th>
-</th>
-
   </tr>
 
   {% for item in site.data.cloudservices.services %}
@@ -44,7 +42,6 @@ title: AWS Compute Services
       {% endfor %}
       </ul>
     </td>
-
     <td>
       <ul>
       {% for entry in item.service %}
@@ -58,7 +55,6 @@ title: AWS Compute Services
       {% endfor %}
       </ul>
     </td>
-
   </tr>
   {% endfor %}
 </table>
