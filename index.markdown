@@ -39,27 +39,32 @@ layout: home
 </table>
 
 <table id="comparison">
-  <tr align="center" class="header" style="position:sticky;top: 0">
-	            <th style="width:7%">Category</th>
-            <th style="width:10%">Service</th>
-            <th>
-              <img  src="assets/img/logo/aws.png" alt="AWS Icon" class="header-img"/>
-            </th>
+  <tr class="header" align="center" style="position:sticky;top:0">
+    <th style="width:7%">Category</th>
+    <th style="width:10%">Service</th>
+    <th>
+      <img src="{{ '/assets/img/logo/aws.png' | relative_url }}" alt="AWS Icon" class="header-img">
+    </th>
   </tr>
-	{% for item in site.data.cloudservices.services %}
-	<tr>
-		<td>{{item.category}}</td>
-		<td>{{item.subcategory}}</td>
-		<td>
-			<ul>
-			    {% for entry in item.service %} 
-					{% for record in entry.aws %}
-						<li ><img src="{{ "/assets/img/cloudproviders/aws/{{record.icon}}" | append: record.icon | relative_url }}"  alt="{{record.name}}" >
-                        <a href="{{record.ref}}" target="_blank" alt="{{record.name}}">{{record.name}}</a></li>
-					{% endfor %}	
-				{% endfor %}	
-			</ul>
-		</td>
-	</tr>
-	{% endfor %}
+
+{% for item in site.data.cloudservices.services %}
+  <tr>
+    <td>{{ item.category }}</td>
+    <td>{{ item.subcategory }}</td>
+    <td>
+      <ul>
+        {% for entry in item.service %}
+          {% for record in entry.aws %}
+            <li>
+              <img src="{{ '/assets/img/cloudproviders/aws/' | append: record.icon | relative_url }}"
+                   alt="{{ record.name }}">
+              <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
+            </li>
+          {% endfor %}
+        {% endfor %}
+      </ul>
+    </td>
+  </tr>
+{% endfor %}
 </table>
+
