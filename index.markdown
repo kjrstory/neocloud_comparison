@@ -32,26 +32,30 @@ title: AWS Compute Services
     <td>
       <ul>
       {% for entry in item.service %}
-        {% for record in entry.aws %}
-          <li>
-            <img src="{{ '/assets/img/cloudproviders/aws/' | append: record.icon | relative_url }}"
-                 alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
-            <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
-          </li>
-        {% endfor %}
+        {% if entry.aws %}
+          {% for record in entry.aws %}
+            <li>
+              <img src="{{ '/assets/img/cloudproviders/aws/' | append: record.icon | relative_url }}"
+                  alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
+              <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
       </ul>
     </td>
     <td>
       <ul>
       {% for entry in item.service %}
-        {% for record in entry.coreweave %}
-          <li>
-            <img src="{{ '/assets/img/cloudproviders/coreweave/' | append: record.icon | relative_url }}"
-                 alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
-            <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
-          </li>
-        {% endfor %}
+        {% if entry.coreweave %}
+          {% for record in entry.coreweave %}
+            <li>
+              <img src="{{ '/assets/img/cloudproviders/coreweave/' | append: record.icon | relative_url }}"
+                  alt="{{ record.name }}" style="height:18px;vertical-align:-3px">
+              <a href="{{ record.ref }}" target="_blank">{{ record.name }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
       </ul>
     </td>
