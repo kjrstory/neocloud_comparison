@@ -25,10 +25,6 @@ jobs:
 
       - uses: actions/jekyll-build-pages@v1   # _site 생성
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3   # v3 → 내부 v4 적용
-        with:
-          path: _site
 
   deploy:
     needs: build
@@ -41,4 +37,5 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/deploy-pages@v4
+        id: deployment
 
