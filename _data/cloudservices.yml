@@ -2,7 +2,7 @@
   categoryurl:
   subcategory: NVIDIA Blackwell(H100/H200)
   subcategoryurl:
-  service:
+  services:
     - aws:
         - name: EC2 P5 Instance
           icon: Arch_Amazon-EC2_64.png
@@ -15,7 +15,7 @@
   categoryurl:
   subcategory: B100
   subcategoryurl:
-  service:
+  services:
     - aws:
         - name:
           icon: none.png
