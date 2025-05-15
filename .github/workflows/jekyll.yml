@@ -3,7 +3,7 @@ name: Build & Deploy Jekyll
 on:
   push:
     branches: [main]
-  pull_request:      # PR에도 빌드·린트 수행
+  pull_request:
     branches: [main]
 
 jobs:
@@ -12,19 +12,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # --- YAML 문법 검사 ---
       - name: YAML lint
         uses: ibiqlik/action-yamllint@v3
         with:
           file_or_dir: _data
           config_file: .yamllint.yml
 
+      # --- (Gemfile이 있다면) 루비 + 번들러 ---
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
-          bundler-cache: true   # Gem 캐시 자동
+          bundler-cache: true      # Gemfile이 없으면 이 스텝은 건너뜀
 
-      - uses: actions/jekyll-build-pages@v1   # _site 생성
+      # --- Jekyll 빌드 ---
+      - uses: actions/jekyll-build-pages@v1    # => ./_site 생성
 
+      # --- 결과물 업로드 (필수) ---
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site           # _site 내부만 tar → root UID 파일 미포함
+          # name 생략 시 기본값 "github-pages"
 
   deploy:
     needs: build
@@ -37,5 +46,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/deploy-pages@v4
-        id: deployment
+        id: deployment          # environment.url에 쓰려면 id 필요
+
 
