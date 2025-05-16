@@ -20,13 +20,13 @@ title: AWS Compute Services
         <img src="{{ '/assets/img/logo/aws.svg' | relative_url }}"
             alt="AWS Logo" style="height:32px">
       </a>
-      <span style="font-size:0.7em; vertical-align:top; color:#A8A9AD;">Silver</span>
+      <span style="font-size:0.8em; vertical-align:top; color:#A8A9AD;">Silver</span>
     </th>
     <th>
       <a href="https://www.coreweave.com" target="_blank">
         <img src="{{ '/assets/img/logo/coreweave.png' | relative_url }}"
             alt="CoreWeave" style="height:32px">
-        <span style="font-size:0.7em; vertical-align:top; color:#C0C0C0;">Platinum</span>
+        <span style="font-size:0.8em; vertical-align:top; color:#C0C0C0;">Platinum</span>
       </a>
     </th>
     <th>
@@ -34,14 +34,14 @@ title: AWS Compute Services
         <img src="{{ '/assets/img/logo/crusoe.svg' | relative_url }}" 
               alt="Nebius" style="height:32px">
       </a>
-      <span style="font-size:0.7em; vertical-align:top; color:#DAA520;">Gold</span>
+      <span style="font-size:0.8em; vertical-align:top; color:#DAA520;">Gold</span>
     </th>
     <th>
       <a href="https://nebius.com" target="_blank">
         <img src="{{ '/assets/img/logo/nebius.svg' | relative_url }}" 
               alt="Nebius" style="height:32px">
       </a>
-      <span style="font-size:0.7em; vertical-align:top; color:#DAA520;">Gold</span>
+      <span style="font-size:0.8em; vertical-align:top; color:#DAA520;">Gold</span>
     </th>
   </tr>
 

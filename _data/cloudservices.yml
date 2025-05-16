@@ -14,7 +14,7 @@ services:
             icon: coreweave-gpu-compute.svg
             ref: https://docs.coreweave.com/docs/platform/instances#a100
       - crusoe:
-          - name: NVIDIA A100 SXM/PCIe
+          - name: A100 SXM/PCIe
             icon: crusoe_icon.png
             ref: https://crusoe.ai/cloud/pricing/
   - category: GPU Compute
@@ -31,11 +31,11 @@ services:
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/gpu-compute
       - crusoe:
-          - name: H100/H200 SXM
+          - name: L40S PCIe
             icon: crusoe_icon.png
             ref: https://crusoe.ai/cloud/pricing/
       - nebius:
-          - name: L40S PCIe
+          - name: L40S/L40
             icon: Nebius_Compute.svg
             ref: https://nebius.com/services/compute
   - category: GPU Compute
