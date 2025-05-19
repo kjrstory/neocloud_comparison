@@ -100,15 +100,28 @@ table th, table td { padding: 2px 2px; }
 
 table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
 
-table.comparison td { border: 1px solid #e8e8e8; }
-table.comparison th {
-  background: white;
-  position: sticky;
-  top: 0; /* Don't forget this, required for the stickiness */
-  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+table.comparison {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
 }
-table.github td { border: 0px }
-table.github { border: 0px }
+
+table.comparison th,
+table.comparison td {
+  border: 1px solid #ccc;
+  padding: 0.4em 0.6em;
+}
+
+table.comparison th {
+  background: #f7f7f7;
+  position: sticky;
+  top: 0;
+}
+
+table.comparison ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
 
 table td img { padding-right: 2px; width: 18px; height: 18px;}
 
