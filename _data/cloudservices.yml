@@ -15,7 +15,7 @@ services:
             ref: https://crusoe.ai/cloud/pricing/
       - together.ai:
           - name: A100 SXM
-            icon: together_icon.png
+            icon: together-color.svg
             ref: https://www.together.ai/gpu-clusters
   - category: GPU Compute
     categoryurl:
@@ -53,7 +53,7 @@ services:
             ref: https://nebius.com/services/compute
       - together.ai:
           - name: H100/H200 SXM
-            icon: together_icon.png
+            icon: together-color.svg
             ref: https://www.together.ai/gpu-clusters
   - category: GPU Compute
     categoryurl:
@@ -66,7 +66,7 @@ services:
             ref: https://www.coreweave.com/products/nvidia-blackwell           
       - together.ai:
           - name: GB200/B200 SXM
-            icon: together_icon.png
+            icon: together-color.svg
             ref: https://www.together.ai/gpu-clusters
   - category: Managed Services
     categoryurl:
@@ -87,7 +87,7 @@ services:
             ref: https://nebius.com/services/managed-kubernetes
       - together.ai:
           - name: Instant GPU Clusters
-            icon: 
+            icon: together-color.svg
             ref: https://www.together.ai/instant-gpu-clusters
   - category: Managed Services
     categoryurl:
@@ -104,6 +104,6 @@ services:
             ref: https://nebius.com/services/soperator
       - together.ai:
           - name: Instant GPU Clusters
-            icon: 
+            icon: together-color.svg
             ref: https://www.together.ai/instant-gpu-clusters
 
