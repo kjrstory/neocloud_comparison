@@ -5,9 +5,6 @@
   - Lepton AI
   - Oracle
   - Azure
-  - Lambda
-  - Scaleway
-  - Sus Metal Cloud
   
 [] 비교 항목 추가
   - AMD

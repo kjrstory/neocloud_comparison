@@ -9,13 +9,6 @@ title: Neocloud Services Comparison
     <th style="width:12%">Service Type</th>
 
     <th>
-      <a href="https://aws.amazon.com" target="_blank">
-        <img src="{{ '/assets/img/logo/aws.svg' | relative_url }}" alt="AWS" style="height:32px">
-      </a>
-      <span style="font-size:0.8em; vertical-align:top; color:#A8A9AD;">Silver</span>
-    </th>
-
-    <th>
       <a href="https://www.coreweave.com" target="_blank">
         <img src="{{ '/assets/img/logo/CRWV_BIG.png' | relative_url }}" alt="CoreWeave" style="height:32px">
         <span style="font-size:0.8em; vertical-align:top; color:#C0C0C0;">Platinum</span>
@@ -37,7 +30,7 @@ title: Neocloud Services Comparison
     </th>
   </tr>
   
-  {% assign csp_list = "aws,coreweave,crusoe,nebius" | split: "," %}
+  {% assign csp_list = "coreweave,crusoe,nebius" | split: "," %}
 
   {% for item in site.data.cloudservices.services %}
     <tr>
