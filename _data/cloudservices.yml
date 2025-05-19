@@ -64,10 +64,14 @@ services:
     subcategory: NVIDIA Blackwell
     subcategoryurl:
     service:
+      - aws:
+          - name: EC2 P6-B200
+            icon: Arch_Amazon-EC2_64.png
+            ref: https://aws.amazon.com/ec2/instance-types/p6/
       - coreweave:
           - name: GB200 NVL72
             icon: coreweave-gpu-compute.svg
-            ref: https://www.coreweave.com/products/nvidia-blackwell
+            ref: https://www.coreweave.com/products/nvidia-blackwell           
   - category: Container Orchestration
     categoryurl:
     subcategory: Kubernetes
