@@ -68,5 +68,25 @@ services:
           - name: GB200 NVL72
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/nvidia-blackwell
-
+  - category: Container Orchestration
+    categoryurl:
+    subcategory: Kubernetes
+    subcategoryurl:
+    service:
+      - aws:
+          - name: Amazon EKS
+            icon: Arch_Amazon-Elastic-Kubernetes-Service_64.svg
+            ref: https://aws.amazon.com/eks/
+      - coreweave:
+          - name: CoreWeave Kubernetes Service (CKS)
+            icon: CRWV.svg
+            ref: https://www.coreweave.com/products/coreweave-kubernetes-service
+      - crusoe:
+          - name: Crusoe Managed Kubernetes (CMK)
+            icon: crusoe_icon.png
+            ref: https://docs.crusoecloud.com/orchestration/cmk
+      - nebius:
+          - name: Managed Service for Kubernetes
+            icon: Managed Service for Kubernetes.svg
+            ref: https://nebius.com/services/managed-kubernetes
 

@@ -16,7 +16,7 @@ title: AWS Compute Services
     <th style="width:7%">Category</th>
     <th style="width:12%">Service Type</th>
     <th>
-      <a href="https://nebius.com" target="_blank">
+      <a href="https://aws.amazon.com" target="_blank">
         <img src="{{ '/assets/img/logo/aws.svg' | relative_url }}"
             alt="AWS Logo" style="height:32px">
       </a>
@@ -24,7 +24,7 @@ title: AWS Compute Services
     </th>
     <th>
       <a href="https://www.coreweave.com" target="_blank">
-        <img src="{{ '/assets/img/logo/coreweave.png' | relative_url }}"
+        <img src="{{ '/assets/img/logo/CRWV_BIG.png' | relative_url }}"
             alt="CoreWeave" style="height:32px">
         <span style="font-size:0.8em; vertical-align:top; color:#C0C0C0;">Platinum</span>
       </a>
