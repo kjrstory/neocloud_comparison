@@ -72,15 +72,11 @@ services:
           - name: GB200 NVL72
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/nvidia-blackwell           
-  - category: Container Orchestration
+  - category: Managed Services
     categoryurl:
     subcategory: Kubernetes
     subcategoryurl:
     service:
-      - aws:
-          - name: Amazon EKS
-            icon: Arch_Amazon-Elastic-Kubernetes-Service_64.svg
-            ref: https://aws.amazon.com/eks/
       - coreweave:
           - name: CoreWeave Kubernetes Service (CKS)
             icon: CRWV.svg
@@ -93,4 +89,17 @@ services:
           - name: Managed Service for Kubernetes
             icon: Managed Service for Kubernetes.svg
             ref: https://nebius.com/services/managed-kubernetes
+  - category: Managed Services
+    categoryurl:
+    subcategory: Slurm
+    subcategoryurl:
+    service:
+      - coreweave:
+          - name: SUNK (Slurm on Kubernetes)
+            icon: CRWV.svg
+            ref: https://www.coreweave.com/products/sunk
+      - nebius:
+          - name: Soperator
+            icon: Slurm.svg
+            ref: https://nebius.com/services/soperator
 
