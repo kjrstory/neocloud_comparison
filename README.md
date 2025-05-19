@@ -8,15 +8,22 @@ While hyperscalers like AWS, Azure, and GCP dominate in general-purpose services
 
 ## 🛠 Contributing
 
-This repository is fully open source. You’re welcome to contribute GPU pricing data, region availability, or other features related to NeoCloud offerings.
+This repository is open source — but curated. You’re welcome to contribute data and features related to NeoCloud services that meet the following standard:
 
-Feel free to:
-- Add new providers (e.g., Paperspace, Vultr, Scaleway)
-- Add new GPUs (e.g., L4, B100, RTX 6000 Ada)
-- Improve formatting, styling, or navigation
-- Submit PRs to improve data consistency
+**Only providers ranked Gold or higher in the [ClusterMAX](https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/) system are accepted.**
 
-Please follow standard pull request etiquette and use YAML linting before submitting.
+### Valid contributions include:
+
+* Adding new qualified NeoCloud providers
+  (e.g., those with Gold+ ClusterMAX ranking)
+
+* Adding new GPU models
+  (e.g., L4, B100, RTX 6000 Ada)
+
+* Enhancing comparison data, formatting, or UI
+
+* Submitting PRs to ensure accuracy and consistency
+
 
 ## 📄 Live Site
 
@@ -30,10 +37,8 @@ See also the list of [contributors](https://github.com/kjrstory/neocloud_compari
 
 ## 📜 License
 
-This project is licensed under the MIT License – see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-Inspired by the original [CloudComparer](https://github.com/ilyas-it83/CloudComparer) project by [@ilyas-it83](https://github.com/ilyas-it83), which compared AWS, Azure, and GCP services.
-
----
+Inspired by the original [CloudComparer](https://github.com/ilyas-it83/CloudComparer) project by [@ilyas-it83](https://github.com/ilyas-it83), which provides a comparison of traditional hyperscaler services — including AWS, Azure, GCP, and others..
