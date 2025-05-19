@@ -23,6 +23,13 @@ title: Neocloud Services Comparison
     </th>
 
     <th>
+      <a href="https://www.together.ai" target="_blank">
+        <img src="{{ '/assets/img/logo/together-ai-logo.png' | relative_url }}" alt="together.ai" style="height:32px">
+      </a>
+      <span style="font-size:0.8em; vertical-align:top; color:#DAA520;">Gold</span>
+    </th>
+
+    <th>
       <a href="https://nebius.com" target="_blank">
         <img src="{{ '/assets/img/logo/nebius.svg' | relative_url }}" alt="Nebius" style="height:32px">
       </a>
@@ -30,7 +37,7 @@ title: Neocloud Services Comparison
     </th>
   </tr>
   
-  {% assign csp_list = "coreweave,crusoe,nebius" | split: "," %}
+  {% assign csp_list = "coreweave,crusoe,together.ai,nebius" | split: "," %}
 
   {% for item in site.data.cloudservices.services %}
     <tr>

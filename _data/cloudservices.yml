@@ -13,6 +13,10 @@ services:
           - name: A100 SXM/PCIe
             icon: crusoe_icon.png
             ref: https://crusoe.ai/cloud/pricing/
+      - together.ai:
+          - name: A100 SXM
+            icon: together_icon.png
+            ref: https://www.together.ai/gpu-clusters
   - category: GPU Compute
     categoryurl:
     subcategory: NVIDIA Ada Lovelace
@@ -47,6 +51,10 @@ services:
           - name: H100/H200 SXM
             icon: Nebius_Compute.svg
             ref: https://nebius.com/services/compute
+      - together.ai:
+          - name: H100/H200 SXM
+            icon: together_icon.png
+            ref: https://www.together.ai/gpu-clusters
   - category: GPU Compute
     categoryurl:
     subcategory: NVIDIA Blackwell
@@ -56,6 +64,10 @@ services:
           - name: GB200 NVL72
             icon: coreweave-gpu-compute.svg
             ref: https://www.coreweave.com/products/nvidia-blackwell           
+      - together.ai:
+          - name: GB200/B200 SXM
+            icon: together_icon.png
+            ref: https://www.together.ai/gpu-clusters
   - category: Managed Services
     categoryurl:
     subcategory: Kubernetes
@@ -73,6 +85,10 @@ services:
           - name: Managed Service for Kubernetes
             icon: Managed Service for Kubernetes.svg
             ref: https://nebius.com/services/managed-kubernetes
+      - together.ai:
+          - name: Instant GPU Clusters
+            icon: 
+            ref: https://www.together.ai/instant-gpu-clusters
   - category: Managed Services
     categoryurl:
     subcategory: Slurm
@@ -86,4 +102,8 @@ services:
           - name: Soperator
             icon: Slurm.svg
             ref: https://nebius.com/services/soperator
+      - together.ai:
+          - name: Instant GPU Clusters
+            icon: 
+            ref: https://www.together.ai/instant-gpu-clusters
 

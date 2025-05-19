@@ -12,3 +12,4 @@ Helpful articles and references about NeoCloud providers:
 - [NeoClouds: A Cost-Effective AI Alternative – Uptime Institute](https://journal.uptimeinstitute.com/neoclouds-a-cost-effective-ai-infrastructure-alternative/)
 - [NeoClouds and the AI Gold Rush – Data Center Frontier](https://www.datacenterfrontier.com/cloud/article/55284280/deep-data-center-neoclouds-as-the-picks-and-shovels-of-the-ai-gold-rush)
 - [GPU-as-a-Service: Rise of NeoClouds – LinkedIn](https://www.linkedin.com/pulse/gpu-as-a-service-rise-neoclouds-joseph-prabhakar-iqurc)
+- [The GPU Cloud ClusterMAX™ Rating System - SemiAnalysis](https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/)
